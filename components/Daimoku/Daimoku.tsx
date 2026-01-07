@@ -43,21 +43,24 @@ const Obiettivi = () => {
   }, [daimoku, previousDaimoku]);
 
   return (
-    <div className="">
+    <div className="py-8">
       <div className="">
         <div
-          className="wow fadeInUp mx-auto max-w-[800px] text-left mb-10"
+          className="wow fadeInUp mx-auto max-w-[800px] text-center mb-10"
           data-wow-delay=".2s"
         >
-          <h2 ref={daimokuContainer} className="mb-3 text-center" id="daimoku">
+          <p className="mb-4 text-lg text-body-color font-medium">
+            Daimoku totali
+          </p>
+          <h2 ref={daimokuContainer} className="mb-6 text-center" id="daimoku">
             0
           </h2>
           <div className="flex items-center justify-center">
             <button
               onClick={() => setModalOpen(true)}
-              className="shadow-submit rounded-md bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
+              className="shadow-submit rounded-full bg-gradient-to-r from-primary to-accent px-10 py-4 text-base font-semibold text-white duration-300 hover:from-primary/90 hover:to-accent/90 transform hover:scale-105 transition-all"
             >
-              Aggiungi Daimoku
+              Condividi il tuo Daimoku
             </button>
           </div>
         </div>

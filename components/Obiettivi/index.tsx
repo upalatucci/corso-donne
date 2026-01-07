@@ -5,19 +5,31 @@ import { CustomMDX } from "../mdx";
 const Obiettivi = () => {
   const guide = getBlogPosts();
   return (
-    <section id="obiettivi" className="overflow-hidden py-4 md:py-20 lg:py-4">
+    <section id="obiettivi" className="overflow-hidden py-8 md:py-20 lg:py-12">
       <div className="container flex justify-center">
         <div className="px-4">
           <div className="mx-auto text-center max-w-3xl">
-            <ul className="mb-10 text-xl">
-              <li className="mb-4">
-                Realizziamo in Unità 10.000.000 di Daimoku per la protezione e
-                la buona salute di tutti i praticanti e di tutti i cittadini dei
-                Campi Flegrei
-              </li>
-
-              <li>Studiamo insieme le guide di Sensei</li>
-            </ul>
+            <div className="mb-10 space-y-6">
+              <div className="rounded-2xl bg-gradient-to-br from-soft-purple/30 to-primary/10 p-6 shadow-lg">
+                <h3 className="mb-4 text-2xl font-semibold text-primary">
+                  Il Nostro Obiettivo
+                </h3>
+                <p className="text-lg leading-relaxed text-dark">
+                  Realizziamo insieme <span className="font-bold text-primary">10.000.000 di Daimoku</span> per la protezione, 
+                  la buona salute e la felicità di tutte le partecipanti del Corso Donne e delle loro famiglie.
+                </p>
+              </div>
+              
+              <div className="rounded-2xl bg-gradient-to-br from-accent/10 to-soft-purple/20 p-6 shadow-lg">
+                <h3 className="mb-4 text-2xl font-semibold text-accent">
+                  Il Nostro Impegno
+                </h3>
+                <p className="text-lg leading-relaxed text-dark">
+                  Studiamo insieme le guide di Sensei, condividiamo esperienze e ci incoraggiamo 
+                  reciprocamente nella pratica quotidiana.
+                </p>
+              </div>
+            </div>
 
             {guide
               .sort((a, b) => {
@@ -35,19 +47,19 @@ const Obiettivi = () => {
                     key={post.slug}
                     className="w-full space-x-0 md:space-x-2"
                   >
-                    <div className="flex flex-col p-4">
-                      <p className="text-primary font-bold  tracking-tight">
+                    <div className="flex flex-col p-6 rounded-xl bg-gray-light/50 mb-6">
+                      <p className="text-primary font-bold tracking-tight text-xl">
                         {post.metadata.title.toUpperCase()}
                       </p>
-                      <p className="text-neutral-600 my-4  tracking-tight">
+                      <p className="text-body-color my-4 tracking-tight leading-relaxed">
                         {post.metadata.summary}
                       </p>
-                      <p className="text-neutral-600 tabular-nums">
+                      <p className="text-body-color tabular-nums">
                         <Link
                           href={post.metadata.link}
-                          className="text-primary"
+                          className="text-primary hover:text-accent font-medium transition-colors duration-200 underline decoration-soft-purple decoration-2 underline-offset-4"
                         >
-                          Link al messaggio completo
+                          Leggi il messaggio completo →
                         </Link>
                       </p>
                     </div>

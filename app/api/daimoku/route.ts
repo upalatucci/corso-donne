@@ -1,7 +1,7 @@
 import { NextResponse, NextRequest } from "next/server";
 import { kv } from "@vercel/kv";
 
-const DAIMOKU_KEY = "daimoku-campi-flegrei";
+const DAIMOKU_KEY = "daimoku-corso-donne";
 
 export async function GET() {
   const daimoku = await kv.get<number>(DAIMOKU_KEY);

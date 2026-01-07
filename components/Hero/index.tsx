@@ -5,7 +5,7 @@ const Hero = () => {
     <>
       <section
         id="home"
-        className=" relative z-10 overflow-hidden pb-8 pt-[120px] md:pb-[80px] md:pt-[100px] xl:pb-[100px] xl:pt-[180px] 2xl:pb-[120px] 2xl:pt-[210px]"
+        className="relative z-10 overflow-hidden pb-8 pt-[120px] md:pb-[80px] md:pt-[100px] xl:pb-[100px] xl:pt-[180px] 2xl:pb-[120px] 2xl:pt-[210px] bg-gradient-to-b from-soft-purple/10 via-transparent to-transparent"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -14,9 +14,12 @@ const Hero = () => {
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
                 data-wow-delay=".2s"
               >
-                <h1 className="mb-8 text-3xl font-bold leading-tight text-black  sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Conta Daimoku Campi Flegrei
+                <h1 className="mb-4 text-3xl font-semibold leading-tight text-dark sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                  Corso Donne
                 </h1>
+                <p className="mb-8 text-lg text-body-color sm:text-xl md:text-2xl">
+                  Unite nella pratica, forti nella fede
+                </p>
                 <Daimoku />
               </div>
             </div>

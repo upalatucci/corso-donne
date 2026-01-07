@@ -25,7 +25,7 @@ const Header = () => {
                   height={20}
                 />
 
-                <h2 className="block md:hidden">Conta Daimoku</h2>
+                <h2 className="block md:hidden text-primary font-semibold">Corso Donne</h2>
               </Link>
             </div>
             {menuData.length > 0 && (
@@ -41,10 +41,10 @@ const Header = () => {
                         <li key={menuItem.id} className="group relative">
                           <Link
                             href={menuItem.path}
-                            className={`flex flex-col py-2 text-xs md:mr-0 md:inline-flex md:px-0 md:py-6 ${
+                            className={`flex flex-col py-2 text-xs md:mr-0 md:inline-flex md:px-0 md:py-6 transition-colors duration-200 ${
                               usePathName === menuItem.path
-                                ? "text-primary "
-                                : "text-dark hover:text-primary "
+                                ? "text-primary font-semibold "
+                                : "text-dark hover:text-accent "
                             }`}
                           >
                             <div className="flex h-6 w-6 mb-2 mx-auto  justify-center md:hidden">

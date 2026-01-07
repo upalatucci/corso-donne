@@ -115,8 +115,8 @@ const Modal: FC<ModalProps> = ({ open, setOpen }) => {
                     as="h3"
                     className="text-base font-semibold text-gray-900"
                   >
-                    {defaultMode && "Aggiungi daimoku"}
-                    {success && "Grazie"}
+                    {defaultMode && "Condividi il tuo Daimoku"}
+                    {success && "Grazie per il tuo contributo!"}
                     {error && "Qualcosa non ha funzionato"}
                   </DialogTitle>
                   <div className="mt-2">
@@ -181,11 +181,11 @@ const Modal: FC<ModalProps> = ({ open, setOpen }) => {
                     )}
 
                     {!defaultMode && (
-                      <p className="text-sm text-gray-500">
+                      <p className="text-sm text-gray-600 leading-relaxed">
                         {success &&
-                          "Stai incoraggiando anche tante altre persone a fare daimoku, Grazie"}
+                          "Il tuo Daimoku si unisce a quello di tutte le altre partecipanti. Insieme creiamo un'onda di energia positiva che incoraggia e protegge tutte noi. Grazie per il tuo prezioso contributo!"}
 
-                        {error && "Riprova piu tardi"}
+                        {error && "Riprova più tardi. Il tuo impegno è comunque importante!"}
                       </p>
                     )}
                   </div>
@@ -197,9 +197,9 @@ const Modal: FC<ModalProps> = ({ open, setOpen }) => {
                 <button
                   type="submit"
                   form="daimoku-form"
-                  className="inline-flex w-full justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary/90 sm:ml-3 sm:w-auto"
+                  className="inline-flex w-full justify-center rounded-full bg-gradient-to-r from-primary to-accent px-6 py-2.5 text-sm font-semibold text-white shadow-lg hover:from-primary/90 hover:to-accent/90 transform hover:scale-105 transition-all sm:ml-3 sm:w-auto"
                 >
-                  Aggiungi
+                  Condividi
                 </button>
               )}
               <button

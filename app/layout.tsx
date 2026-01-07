@@ -8,8 +8,8 @@ import { roboto } from "./fonts";
 import ScrollUp from "@/components/Common/ScrollUp";
 
 export const metadata: Metadata = {
-  title: "Conta Daimoku Campi Flegrei",
-  description: "Niente può distruggere i tesori del cuore.",
+  title: "Conta Daimoku Corso Donne",
+  description: "Unite nella pratica, forti nella fede. Insieme realizziamo la rivoluzione umana.",
 };
 
 export default function RootLayout({

@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8f9fa;
-  --foreground: #171717;
+  --background: #fdf4f7;
+  --foreground: #2d1b3d;
 }
 
 body {
@@ -50,7 +50,7 @@ body {
   font-size: 1rem;
   font-weight: 500;
   text-transform: capitalize;
-  color: #1b1564;
+  color: #9B59B6;
 }
 
 @media (min-width: 768px) {
@@ -67,11 +67,13 @@ body {
 }
 
 #daimoku {
-  background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+  background: -webkit-linear-gradient(135deg, #9B59B6, #E91E63, #F06292 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 64px;
   padding: 1rem 0;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 @media (min-width: 768px) {
