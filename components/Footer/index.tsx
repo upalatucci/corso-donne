@@ -11,7 +11,7 @@ const Footer = () => {
               Corso Donne
             </p>
             <p className="text-sm text-body-color italic">
-              "Niente può distruggere i tesori del cuore"
+              Niente può distruggere i tesori del cuore
             </p>
           </div>
         </div>
