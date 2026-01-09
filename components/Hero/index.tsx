@@ -15,9 +15,12 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-4 text-3xl font-semibold leading-tight text-dark sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Corso Donne
+                  Corso Donne Nazionale 2026
                 </h1>
-                <p className="mb-8 text-lg text-body-color sm:text-xl md:text-2xl">
+                <p className="mb-3 text-lg text-body-color sm:text-xl md:text-2xl font-medium">
+                  Salerno, 27 febbraio - 1 marzo
+                </p>
+                <p className="mb-8 text-base text-body-color sm:text-lg md:text-xl italic">
                   Unite nella pratica, forti nella fede
                 </p>
                 <Daimoku />

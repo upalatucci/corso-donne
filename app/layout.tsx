@@ -8,8 +8,8 @@ import { roboto } from "./fonts";
 import ScrollUp from "@/components/Common/ScrollUp";
 
 export const metadata: Metadata = {
-  title: "Conta Daimoku Corso Donne",
-  description: "Unite nella pratica, forti nella fede. Insieme realizziamo la rivoluzione umana.",
+  title: "Corso Donne Nazionale 2026 - Salerno",
+  description: "Corso Donne Nazionale 2026 a Salerno dal 27 febbraio al 1 marzo. Unite nella pratica, forti nella fede. Insieme creiamo un'onda potente che raggiunga ogni donna d'Italia.",
 };
 
 export default function RootLayout({
